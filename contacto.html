@@ -1,70 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contacto — Klisman Navarro</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Klisman Andres Navarro Fernandez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-  <aside class="sidebar">
-    <div class="sidebar__brand">
-      <div class="sidebar__brand-name">klisman-navarro.dev</div>
-      <div class="sidebar__brand-role">Ingeniería de Software</div>
+    <div class="cv-container">
+        <!-- COLUMNA IZQUIERDA (Barra lateral) -->
+        <aside class="sidebar">
+            <div class="profile-pic">
+                <img src="imagen/tu-foto.jpg" alt="Klisman Navarro">
+            </div>
+
+            <div class="section">
+                <h3>CONTACTO</h3>
+                <ul class="contact-list">
+                    <li>📍 Magangué, Bolívar, Colombia</li>
+                    <li>✉️ knavarrofernadez@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>APTITUDES</h3>
+                <ul class="skills-list">
+                    <li>Pensamiento lógico y analítico</li>
+                    <li>Resolución de problemas técnicos</li>
+                    <li>Trabajo en equipo y colaboración</li>
+                    <li>Aprendizaje continuo y autodidacta</li>
+                    <li>Gestión de proyectos básicos</li>
+                    <li>Adaptabilidad a nuevas tecnologías</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>IDIOMAS</h3>
+                <div class="language">
+                    <span>Español</span>
+                    <span class="level">Nativo</span>
+                </div>
+                <div class="language">
+                    <span>Inglés</span>
+                    <span class="level">Básico (A1-A2)</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>INFORMÁTICA</h3>
+                <ul class="software-list">
+                    <li>HTML5 & CSS3</li>
+                    <li>Lógica de Programación</li>
+                    <li>Mantenimiento de Computadores</li>
+                    <li>Microsoft Office (Word, Excel)</li>
+                    <li>Redes Básicas</li>
+                    <li>Git y GitHub</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- COLUMNA DERECHA (Contenido principal) -->
+        <main class="main-content">
+            <nav class="navbar">
+                <a href="index.html">Inicio</a>
+                <a href="sobre-mi.html">Sobre mí</a>
+                <a href="experiencia.html">Experiencia</a>
+                <a href="contacto.html" class="active">Contacto</a>
+            </nav>
+
+            <header>
+                <h1>Klisman Andres<br>Navarro Fernandez</h1>
+                <h2 class="subtitle">Estudiante de Ingeniería de Sistemas</h2>
+            </header>
+
+            <section class="section-main">
+                <h2>CONTACTO</h2>
+                <p>¿Buscas un estudiante de ingeniería de sistemas con ganas de aportar y seguir aprendiendo? Escríbeme, con gusto conversamos.</p>
+
+                <div class="contact-cta">
+                    <p>📍 Magangué, Bolívar, Colombia</p>
+                    <p>✉️ knavarrofernadez@gmail.com</p>
+                    <a href="mailto:knavarrofernadez@gmail.com" class="email-button">Enviar un correo</a>
+                </div>
+            </section>
+        </main>
     </div>
-    <div class="sidebar__label">EXPLORADOR</div>
-    <nav>
-      <a href="index.html"><span class="dot"></span>inicio.html</a>
-      <a href="sobre-mi.html"><span class="dot"></span>sobre-mi.html</a>
-      <a href="experiencia.html"><span class="dot"></span>experiencia.html</a>
-      <a href="contacto.html" class="active"><span class="dot"></span>contacto.html</a>
-    </nav>
-    <div class="sidebar__footer">© 2026 — Hecho con HTML &amp; CSS</div>
-  </aside>
-
-  <main class="main">
-    <div class="topbar">portafolio <span class="sep">/</span> <span class="file">contacto.html</span></div>
-
-    <div class="content">
-
-      <section class="section" style="border-top:none; padding-top:0;">
-        <p class="eyebrow">hablemos</p>
-        <h1>Contacto</h1>
-        <p>¿Quieres escribirme? Puedes hacerlo por cualquiera de estos medios, o usar el formulario de abajo.</p>
-
-        <div class="contact-list">
-          <a href="mailto:novitaastro2005@gmail.com">✉ novitaastro2005@gmail.com</a>
-        </div>
-      </section>
-
-      <section class="section">
-        <p class="eyebrow">formulario</p>
-        <h2>Envíame un mensaje</h2>
-
-        <!-- Este formulario SÍ envía mensajes reales a tu correo, usando el servicio gratuito FormSubmit.co -->
-        <form action="https://formsubmit.co/novitaastro2005@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="Nuevo mensaje desde tu hoja de vida web">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_next" value="contacto.html">
-          <div class="form-row">
-            <label for="nombre">Tu nombre</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
-          </div>
-          <div class="form-row">
-            <label for="correo">Tu correo</label>
-            <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
-          </div>
-          <div class="form-row">
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
-          </div>
-          <button type="submit">Enviar mensaje</button>
-        </form>
-      </section>
-
-    </div>
-  </main>
 
 </body>
 </html>

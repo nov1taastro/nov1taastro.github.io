@@ -1,0 +1,265 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Contenedor principal del CV */
+.cv-container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* --- COLUMNA IZQUIERDA (Barra lateral) --- */
+.sidebar {
+    width: 35%;
+    background-color: #1a5b4d; /* Verde oscuro elegante */
+    color: #fff;
+    padding: 30px 20px;
+}
+
+.profile-pic img {
+    width: 100%;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-bottom: 30px;
+    background-color: #ccc; /* Fondo gris mientras pones tu foto */
+    min-height: 150px;
+}
+
+.sidebar .section {
+    margin-bottom: 30px;
+}
+
+.sidebar h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.contact-list, .skills-list, .software-list {
+    list-style: none;
+    font-size: 0.85rem;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    word-break: break-word;
+}
+
+.skills-list li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.skills-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Idiomas */
+.language {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+}
+
+.language .level {
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+/* Software */
+.software-list li {
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 15px;
+}
+.software-list li::before {
+    content: "-";
+    position: absolute;
+    left: 0;
+    color: #fff;
+}
+
+/* --- COLUMNA DERECHA (Contenido principal) --- */
+.main-content {
+    width: 65%;
+    padding: 40px;
+}
+
+/* --- MENÚ DE NAVEGACIÓN --- */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #eee;
+}
+
+.navbar a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #777;
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.navbar a:hover {
+    color: #1a5b4d;
+}
+
+.navbar a.active {
+    color: #1a5b4d;
+    border-bottom-color: #1a5b4d;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    color: #1a5b4d;
+    line-height: 1.1;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+header .subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.section-main {
+    margin-bottom: 30px;
+}
+
+.section-main h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #1a5b4d;
+    border-bottom: 2px solid #1a5b4d;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-main h2::before {
+    content: "■";
+    font-size: 0.8rem;
+}
+
+.section-main p {
+    font-size: 0.9rem;
+    text-align: justify;
+    color: #555;
+}
+
+/* Experiencia Laboral y Educación */
+.job, .education {
+    margin-bottom: 20px;
+}
+
+.job h4, .education h4 {
+    font-size: 1rem;
+    color: #222;
+    margin-bottom: 2px;
+}
+
+.job p {
+    margin-top: 6px;
+}
+
+.education span {
+    font-size: 0.85rem;
+    color: #666;
+    display: block;
+}
+
+/* --- Página de contacto --- */
+.contact-cta {
+    background-color: #f4f4f4;
+    border-left: 4px solid #1a5b4d;
+    padding: 20px 25px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.contact-cta p {
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.contact-cta .email-button {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #1a5b4d;
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: background-color 0.2s ease;
+}
+
+.contact-cta .email-button:hover {
+    background-color: #124237;
+}
+
+/* --- DISEÑO RESPONSIVE (Para celulares) --- */
+@media (max-width: 768px) {
+    .cv-container {
+        flex-direction: column;
+    }
+
+    .sidebar, .main-content {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .navbar {
+        gap: 15px;
+    }
+}

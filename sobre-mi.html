@@ -1,111 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sobre mí — Klisman Navarro</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí - Klisman Andres Navarro Fernandez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-  <aside class="sidebar">
-    <div class="sidebar__brand">
-      <div class="sidebar__brand-name">klisman-navarro.dev</div>
-      <div class="sidebar__brand-role">Ingeniería de Software</div>
+    <div class="cv-container">
+        <!-- COLUMNA IZQUIERDA (Barra lateral) -->
+        <aside class="sidebar">
+            <div class="profile-pic">
+                <img src="imagen/tu-foto.jpg" alt="Klisman Navarro">
+            </div>
+
+            <div class="section">
+                <h3>CONTACTO</h3>
+                <ul class="contact-list">
+                    <li>📍 Magangué, Bolívar, Colombia</li>
+                    <li>✉️ knavarrofernadez@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>APTITUDES</h3>
+                <ul class="skills-list">
+                    <li>Pensamiento lógico y analítico</li>
+                    <li>Resolución de problemas técnicos</li>
+                    <li>Trabajo en equipo y colaboración</li>
+                    <li>Aprendizaje continuo y autodidacta</li>
+                    <li>Gestión de proyectos básicos</li>
+                    <li>Adaptabilidad a nuevas tecnologías</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>IDIOMAS</h3>
+                <div class="language">
+                    <span>Español</span>
+                    <span class="level">Nativo</span>
+                </div>
+                <div class="language">
+                    <span>Inglés</span>
+                    <span class="level">Básico (A1-A2)</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>INFORMÁTICA</h3>
+                <ul class="software-list">
+                    <li>HTML5 & CSS3</li>
+                    <li>Lógica de Programación</li>
+                    <li>Mantenimiento de Computadores</li>
+                    <li>Microsoft Office (Word, Excel)</li>
+                    <li>Redes Básicas</li>
+                    <li>Git y GitHub</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- COLUMNA DERECHA (Contenido principal) -->
+        <main class="main-content">
+            <nav class="navbar">
+                <a href="index.html">Inicio</a>
+                <a href="sobre-mi.html" class="active">Sobre mí</a>
+                <a href="experiencia.html">Experiencia</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+
+            <header>
+                <h1>Klisman Andres<br>Navarro Fernandez</h1>
+                <h2 class="subtitle">Estudiante de Ingeniería de Sistemas</h2>
+            </header>
+
+            <section class="section-main">
+                <h2>SOBRE MÍ</h2>
+                <p>Soy estudiante de Ingeniería de Sistemas con una fuerte motivación por la tecnología y la resolución de problemas. Disfruto entender cómo funcionan las cosas a fondo, ya sea el código detrás de una página web o el hardware de un computador. Estoy en una etapa de formación activa, construyendo proyectos propios como este portafolio para poner en práctica lo que voy aprendiendo y prepararme para mi primera experiencia profesional.</p>
+            </section>
+
+            <section class="section-main">
+                <h2>CÓMO TRABAJO</h2>
+                <div class="job">
+                    <h4>Pensamiento analítico</h4>
+                    <p>Me gusta descomponer problemas complejos en partes más simples y buscar soluciones lógicas, paso a paso.</p>
+                </div>
+                <div class="job">
+                    <h4>Aprendizaje constante</h4>
+                    <p>Estoy en formación continua, explorando nuevas herramientas y buenas prácticas de desarrollo por mi cuenta.</p>
+                </div>
+                <div class="job">
+                    <h4>Trabajo en equipo</h4>
+                    <p>Me adapto con facilidad a dinámicas grupales y aporto una actitud colaborativa en cada proyecto.</p>
+                </div>
+            </section>
+        </main>
     </div>
-    <div class="sidebar__label">EXPLORADOR</div>
-    <nav>
-      <a href="index.html"><span class="dot"></span>inicio.html</a>
-      <a href="sobre-mi.html" class="active"><span class="dot"></span>sobre-mi.html</a>
-      <a href="experiencia.html"><span class="dot"></span>experiencia.html</a>
-      <a href="contacto.html"><span class="dot"></span>contacto.html</a>
-    </nav>
-    <div class="sidebar__footer">© 2026 — Hecho con HTML &amp; CSS</div>
-  </aside>
-
-  <main class="main">
-    <div class="topbar">portafolio <span class="sep">/</span> <span class="file">sobre-mi.html</span></div>
-
-    <div class="content">
-
-      <section class="section" style="border-top:none; padding-top:0;">
-        <p class="eyebrow">quién soy</p>
-        <h1>Sobre mí</h1>
-        <p>Soy Klisman Navarro, estudiante de Ingeniería de Software residente en Magangué, Bolívar. Fuera del código, me gusta leer y jugar videojuegos — dos cosas que, sin darme cuenta, terminaron llevándome a interesarme por el desarrollo de videojuegos como una de las ramas que más quiero explorar dentro de la ingeniería de software.</p>
-        <p>Actualmente estoy construyendo las bases: lógica de programación, bases de datos y desarrollo web, con la meta de ir acercándome poco a poco a motores de videojuegos y proyectos propios en esa área.</p>
-      </section>
-
-      <section class="section">
-        <p class="eyebrow">formación académica</p>
-        <h2>Educación</h2>
-
-        <div class="gitlog">
-          <div class="commit">
-            <div class="commit__hash">2023—<br>presente</div>
-            <div>
-              <div class="commit__title">Ingeniería de Software</div>
-              <div class="commit__meta">Universidad de Cartagena · CTeV, Centro Tecnológico para la Formación Virtual y a Distancia</div>
-              <p>Formación en fundamentos de programación, bases de datos, desarrollo web y estructuras de datos, con proyección hacia el desarrollo de videojuegos.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <p class="eyebrow">habilidades técnicas</p>
-        <h2>Tecnologías con las que trabajo</h2>
-        <div class="badges">
-          <span class="badge">HTML5</span>
-          <span class="badge">CSS3</span>
-          <span class="badge">JavaScript</span>
-          <span class="badge">Python</span>
-          <span class="badge">SQL</span>
-          <span class="badge">Git</span>
-          <span class="badge">Otra tecnología</span>
-        </div>
-      </section>
-
-      <section class="section">
-        <p class="eyebrow">fuera del código</p>
-        <h2>Intereses</h2>
-        <div class="badges">
-          <span class="badge">Lectura</span>
-          <span class="badge">Videojuegos</span>
-          <span class="badge">Desarrollo de videojuegos</span>
-        </div>
-        <div class="grid" style="margin-top:18px;">
-          <div class="card" style="padding:0; overflow:hidden;">
-            <img src="https://loremflickr.com/400/260/book,reading" alt="Lectura" style="width:100%; display:block; border-radius:6px 6px 0 0;">
-            <div style="padding:12px 14px;">
-              <div class="tag">LECTURA</div>
-            </div>
-          </div>
-          <div class="card" style="padding:0; overflow:hidden;">
-            <img src="https://loremflickr.com/400/260/gamepad,videogame" alt="Videojuegos" style="width:100%; display:block; border-radius:6px 6px 0 0;">
-            <div style="padding:12px 14px;">
-              <div class="tag">VIDEOJUEGOS</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <p class="eyebrow">idiomas</p>
-        <h2>Idiomas</h2>
-        <div class="grid">
-          <div class="card">
-            <div class="tag">ESPAÑOL</div>
-            <p style="margin:0; color:var(--text)">Nativo</p>
-          </div>
-          <div class="card">
-            <div class="tag">INGLÉS</div>
-            <p style="margin:0; color:var(--text)">Iniciando (nivel básico)</p>
-          </div>
-        </div>
-      </section>
-
-    </div>
-  </main>
 
 </body>
 </html>
