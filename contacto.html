@@ -5,88 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Klisman Andres Navarro Fernandez</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-    <div class="cv-container">
-        <!-- COLUMNA IZQUIERDA (Barra lateral) -->
-        <aside class="sidebar">
-            <div class="profile-pic">
-                <img src="imagen/tu-foto.jpg" alt="Klisman Navarro">
-            </div>
+<div class="container my-4 my-md-5">
+    <div class="cv-shadow mx-auto" style="max-width: 960px;">
+        <div class="row g-0">
 
-            <div class="section">
-                <h3>CONTACTO</h3>
-                <ul class="contact-list">
-                    <li>📍 Magangué, Bolívar, Colombia</li>
-                    <li>✉️ knavarrofernadez@gmail.com</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h3>APTITUDES</h3>
-                <ul class="skills-list">
-                    <li>Pensamiento lógico y analítico</li>
-                    <li>Resolución de problemas técnicos</li>
-                    <li>Trabajo en equipo y colaboración</li>
-                    <li>Aprendizaje continuo y autodidacta</li>
-                    <li>Gestión de proyectos básicos</li>
-                    <li>Adaptabilidad a nuevas tecnologías</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h3>IDIOMAS</h3>
-                <div class="language">
-                    <span>Español</span>
-                    <span class="level">Nativo</span>
+            <!-- COLUMNA IZQUIERDA (Barra lateral) -->
+            <aside class="col-12 col-md-4 sidebar p-4">
+                <div class="profile-pic">
+                    <img src="imagen/tu-foto.jpg" alt="Klisman Navarro">
                 </div>
-                <div class="language">
-                    <span>Inglés</span>
-                    <span class="level">Básico (A1-A2)</span>
+
+                <div class="section">
+                    <h3>CONTACTO</h3>
+                    <ul class="contact-list">
+                        <li>📍 Magangué, Bolívar, Colombia</li>
+                        <li>✉️ novitaastro2005@gmail.com</li>
+                    </ul>
                 </div>
-            </div>
 
-            <div class="section">
-                <h3>INFORMÁTICA</h3>
-                <ul class="software-list">
-                    <li>HTML5 & CSS3</li>
-                    <li>Lógica de Programación</li>
-                    <li>Mantenimiento de Computadores</li>
-                    <li>Microsoft Office (Word, Excel)</li>
-                    <li>Redes Básicas</li>
-                    <li>Git y GitHub</li>
-                </ul>
-            </div>
-        </aside>
-
-        <!-- COLUMNA DERECHA (Contenido principal) -->
-        <main class="main-content">
-            <nav class="navbar">
-                <a href="index.html">Inicio</a>
-                <a href="sobre-mi.html">Sobre mí</a>
-                <a href="experiencia.html">Experiencia</a>
-                <a href="contacto.html" class="active">Contacto</a>
-            </nav>
-
-            <header>
-                <h1>Klisman Andres<br>Navarro Fernandez</h1>
-                <h2 class="subtitle">Estudiante de Ingeniería de Sistemas</h2>
-            </header>
-
-            <section class="section-main">
-                <h2>CONTACTO</h2>
-                <p>¿Buscas un estudiante de ingeniería de sistemas con ganas de aportar y seguir aprendiendo? Escríbeme, con gusto conversamos.</p>
-
-                <div class="contact-cta">
-                    <p>📍 Magangué, Bolívar, Colombia</p>
-                    <p>✉️ knavarrofernadez@gmail.com</p>
-                    <a href="mailto:knavarrofernadez@gmail.com" class="email-button">Enviar un correo</a>
+                <div class="section">
+                    <h3>APTITUDES</h3>
+                    <ul class="skills-list">
+                        <li>Pensamiento lógico y analítico</li>
+                        <li>Resolución de problemas técnicos</li>
+                        <li>Trabajo en equipo y colaboración</li>
+                        <li>Aprendizaje continuo y autodidacta</li>
+                        <li>Gestión de proyectos básicos</li>
+                        <li>Adaptabilidad a nuevas tecnologías</li>
+                    </ul>
                 </div>
-            </section>
-        </main>
+
+                <div class="section">
+                    <h3>IDIOMAS</h3>
+                    <div class="language">
+                        <span>Español</span>
+                        <span class="level">Nativo</span>
+                    </div>
+                    <div class="language">
+                        <span>Inglés</span>
+                        <span class="level">Básico (A1-A2)</span>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>INFORMÁTICA</h3>
+                    <ul class="software-list">
+                        <li>HTML5 & CSS3</li>
+                        <li>Lógica de Programación</li>
+                        <li>Mantenimiento de Computadores</li>
+                        <li>Microsoft Office (Word, Excel)</li>
+                        <li>Redes Básicas</li>
+                        <li>Git y GitHub</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- COLUMNA DERECHA (Contenido principal) -->
+            <main class="col-12 col-md-8 main-content p-4 p-md-5">
+
+                <nav class="navbar navbar-expand-md cv-navbar p-0 mb-4">
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navMenu">
+                        <ul class="navbar-nav gap-md-4">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="sobre-mi.html">Sobre mí</a></li>
+                            <li class="nav-item"><a class="nav-link" href="experiencia.html">Experiencia</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <header class="mb-4">
+                    <h1>Klisman Andres<br>Navarro Fernandez</h1>
+                    <h2 class="subtitle">Estudiante de Ingeniería de Sistemas</h2>
+                </header>
+
+                <section class="section-main">
+                    <h2>CONTACTO</h2>
+                    <p>¿Buscas un estudiante de ingeniería de sistemas con ganas de aportar y seguir aprendiendo? Escríbeme, con gusto conversamos.</p>
+
+                    <div class="contact-cta">
+                        <p>📍 Magangué, Bolívar, Colombia</p>
+                        <p>✉️ novitaastro2005@gmail.com</p>
+                        <a href="mailto:novitaastro2005@gmail.com" class="email-button">Enviar un correo directo</a>
+                    </div>
+                </section>
+
+                <section class="section-main">
+                    <h2>ENVÍAME UN MENSAJE</h2>
+
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required minlength="3">
+                            <div class="invalid-feedback">Escribe tu nombre completo (mínimo 3 letras).</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="correo" name="correo" required>
+                            <div class="invalid-feedback">Ingresa un correo electrónico válido.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required minlength="10"></textarea>
+                            <div class="invalid-feedback">Escribe un mensaje de al menos 10 caracteres.</div>
+                        </div>
+
+                        <button type="submit" class="btn btn-cv">Enviar mensaje</button>
+
+                        <div id="formSuccess" class="alert alert-success mt-3 d-none" role="alert">
+                            ¡Gracias! Tu mensaje pasó todas las validaciones correctamente.
+                        </div>
+                    </form>
+                </section>
+
+            </main>
+        </div>
     </div>
+</div>
 
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
